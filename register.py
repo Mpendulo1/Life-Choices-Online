@@ -73,7 +73,7 @@ class Registration:
         else:
             con = mysql.connector.connect(user='sql6423123', password='EYQeBzmlvU', port='3306', host='sql6.freesqldatabase.com', database='sql6423123', auth_plugin='mysql_native_password')
             cursor = con.cursor()
-            cursor.execute("INSERT INTO `Life Choices Online` VALUES('" + name + "','" + password + "', '" + surname + "', '" + identity + "', '" + phone_number + "', '" + kin_name + "', '" + kin_cell + "' )")
+            cursor.execute("INSERT INTO `Life Choices Online` VALUES('" + name + "','" + surname + "', '" + password + "', '" + identity + "', '" + phone_number + "', '" + kin_name + "', '" + kin_cell + "' )")
             cursor.execute('commit')
             messagebox.showinfo("PERMISSION", "YOU HAVE REGISTERED SUCCESSFULLY")
             self.name_entry.delete(0, END)

@@ -1,3 +1,5 @@
+# Mpendelo Khoza
+# Group 2
 import tkinter
 from tkinter import *
 import tkinter as ttk
@@ -43,7 +45,7 @@ class MainScreen:
             name = self.username_entry.get()
             password = self.password_entry.get()
             curs = connection.cursor()
-            query = ('SELECT Name, Password FROM `Life Choices Online` ')
+            query = ('SELECT Name, password FROM `Life Choices Online` ')
             for (Name, Password) in curs:
                 if name == Name and password == Password:
                     messagebox.showinfo('Welcome' + name, 'Login Successful, Enjoy Your Day')
